@@ -2,8 +2,6 @@
 
 import tensorflow as tf
 
-num_calibration_steps = 10000
-
 def representative_dataset_gen():
   for i in range(1,num_calibration_steps - 1):
     image = train_features[i:i + 1]
